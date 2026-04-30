@@ -34,6 +34,8 @@ class Test_heapq_module:
     heapq.heappush(pq, (self.oneFifth, "a fifth"))
     min = heapq.heappop(pq)
     heapq.heappush(pq, (self.oneHalf, "a half"))
-    assert self.oneTenth == min[0] and 3 == len(pq) and self.oneSeventh == pq[0][0]
+    assert self.oneTenth == min[0]
+    assert 3 == len(pq)
+    assert self.oneSeventh == pq[0][0]
 
 
