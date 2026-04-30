@@ -8,26 +8,26 @@ class Test_heapq_module:
   oneFifth = 1.0/5.
   oneHalf = 1.0/2.
 
-  def test_canInsertRealNumber(self):
+  def test_mustInsertRealNumber(self):
     pq = []
     heapq.heappush(pq, (self.oneSeventh, "a seventh"))
     assert self.oneSeventh == pq[0][0]
 
-  def test_canReturnHeapCount(self):
+  def test_mustReturnHeapCount(self):
     pq = []
     heapq.heappush(pq, (self.oneSeventh, "a seventh"))
     heapq.heappush(pq, (self.oneTenth, "a tenth"))
     heapq.heappush(pq, (self.oneFifth, "a fifth"))
     assert 3 == len(pq)
  
-  def test_canReturnMinimumValueOfHeap(self):
+  def test_mustReturnMinimumValueOfHeap(self):
     pq = []
     heapq.heappush(pq, (self.oneSeventh, "a seventh"))
     heapq.heappush(pq, (self.oneTenth, "a tenth"))
     heapq.heappush(pq, (self.oneFifth, "a fifth"))
     assert self.oneTenth == pq[0][0]
 
-  def test_canRemoveMinimumItemAndInsertSomethingLarger(self):
+  def test_mustRemoveMinimumItemAndInsertSomethingLarger(self):
     pq = []
     heapq.heappush(pq, (self.oneSeventh, "a seventh"))
     heapq.heappush(pq, (self.oneTenth, "a tenth"))
