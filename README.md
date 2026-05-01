@@ -42,4 +42,5 @@ Regarding the conditions of usage stipulated in the license of frequency lists, 
 for the frequency lists, provide a link to the license of the frequency lists 
 and indicate if changes were made to the frequency lists.
 
+Note that all word frequencies are given in units of per million words.
 
