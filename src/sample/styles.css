@@ -1,0 +1,36 @@
+    .flow {
+      background: #aaaaaa;
+      border: 1px solid #ccc;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .outer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      border: 1px solid #ccc;
+      min-width: 400px;
+      min-height: 300px;
+      gap: 7px;
+      margin: 20px auto;
+      background: #555555
+    }
+    .cell {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ccc;
+      gap: 5px;
+      min-height: 60px;
+      min-width: 80px;
+      background: #e0e0e0
+    }
+    .inner {
+      text-align: left;
+      border: 1px solid #eee;
+      margin: 1px;
+      min-height: 15px;
+      min-width: 60px;
+    }
+    @media (max-width: 850px) {
+      .flow { grid-template-columns: 1fr; }
+    }
